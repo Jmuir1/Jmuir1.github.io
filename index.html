@@ -6,12 +6,19 @@
 <meta charset="utf-8">
 
 <style>
+h2 { background-color: #D5D5D5;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 325px;
+ }
 
-.padMeright { padding-right: 100px; }
+h3 { background-color: #D5D5D5;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 325px;
+ }
 
-.embed-responsive{
-  margin: 20px 0;
-}
+#padder { padding-left 100px; }
 
 </style>
 
@@ -36,10 +43,19 @@
 	
 
 <main>
-<br><br><br>
-<h3>Recommended Streams<h3>
+<br><br>
+<h2>Welcome to Stream Push</h2>
+<p>Stream Push is a platform to help assist content creator build an audience.<br>
+While helping viewer's find newer streamers to watch</p>
 
-<div class=".embed-responsive">
+<br>
+<div id="padder">
+<h3>Recommended Streams</h3>
+Note: if the user is offline the stream will not load.
+</div>
+<center>
+
+<! -- Stream 1 --> 
 
 	  <div id="twitch-embed"></div>   
     <script src="https://embed.twitch.tv/embed/v1.js"></script> 
@@ -48,16 +64,13 @@
         width: 400,
         height: 300,
 		autoplay: false,	
-        channel: "chepnko",       
+        channel: "SalDiggler",       
         parent: ["embed.example.com", "othersite.example.com"]
       });
     </script>
 	
-</div>
-<div class=".embed-responsive">
+<! -- Stream 2 --> 
 
-	&nbsp;
-	
 		  <div id="twitch-embed"></div>   
     <script src="https://embed.twitch.tv/embed/v1.js"></script> 
     <script type="text/javascript">
@@ -70,26 +83,20 @@
       });
     </script>
 	
-</div>
-<div class=".embed-responsive">
-	&nbsp;
+<! -- Stream 3 --> 
+		
+	<iframe
+    src="https://player.twitch.tv/?bthwiz&parent=streamernews.example.com"
+    height="<height>"
+    width="<width>"
+    frameborder="<frameborder>"
+    scrolling="<scrolling>"
+    allowfullscreen="<allowfullscreen>">
+	</iframe>
+
+</center>
 	
-		  <div id="twitch-embed"></div>   
-    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 400,
-        height: 300,
-		autoplay: false,	
-        channel: "chepnko",       
-        parent: ["embed.example.com", "othersite.example.com"]
-      });
-    </script>
-</div>
-
-	
-
-
+piss me off or what bud
 
 </main>
 

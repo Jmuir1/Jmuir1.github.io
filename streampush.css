@@ -3,48 +3,60 @@
 
 #trapper { padding: 5px 5px; }
 
+.rightpadder { padding-right: 10px; }
 
 body { background-color: #000000; }
 header{ background-color: #D5D5D5; 
 		padding: 10px 5px;
 		width: 100%;
+		
 		}
 
-nav{ position: fixed;
+h2 { background-color: #fafafa; }
+
+nav	{ position: fixed ;
 		background-color: #fafafa;
 		background-image: url(sp.jpg);
 		background-repeat: no-repeat;
 		box-shadow: 2px 4px 4px black;
+		padding-left: 25px;
 		height: 100px;
 		width: 100%;
-		padding-top: 10px 10px ;
+		
+		
+		
+		
+		
+		
 		
 		
 		
 }
 
+
 nav li { display: inline; }
-nav ul { list-style-type: none; margin: 50px; padding: 30px 60px 60px 50px; }
+nav ul { list-style-type: none; margin: 50px; padding: 30px }
 
 nav a { text-decoration: none;
-		padding-right: 20px;
+		padding-right: 15px;
 		padding-left: 15px;
-		background-color: #B3C7E6;
+		background-color: #D5D5D5;
 		text-align: center;
 		border: 1px solid #000000;
 		
 }
+nav a:link { color: #000000; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover { color: #869DC7; background-color: #EAEAEA; }
 
 
 
 main { background-color: #fff;
 		margin-left: 160px
 		color: #000000;
-		padding: 11% 5px;
-		width: 700px
-		height: 100%;
+		padding: 45px;		
 		
-		display: block; 
+		
 		
 		
 }
@@ -63,7 +75,7 @@ footer { font-size: 70%;
 			text-align: center; 
 			padding: 2%; background-color: #D5D5D5; 
 			clear: both; 
-			overflow: hidden;
+			
 			
 }
 
@@ -72,6 +84,7 @@ div.relative {
   width: 1000px;
   height: 200px;
   border: 3px solid #73AD21;
+  
 } 
 
 div.absolute {
@@ -81,4 +94,5 @@ div.absolute {
   width: 200px;
   height: 100px;
   border: 3px solid #73AD21;
+  
 }
