@@ -7,6 +7,11 @@
 
 <style>
 
+.padMeright { padding-right: 100px; }
+
+.embed-responsive{
+  margin: 20px 0;
+}
 
 </style>
 
@@ -16,7 +21,6 @@
 <div id="wrapper">
 	
 <header> 
-
 <div id="trapper">
 <nav>
 		<ul>
@@ -31,44 +35,62 @@
 
 	
 
-
-<rightColumn>
-
-kek
-</rightColumn>
-
-
 <main>
-<div class="relative">
-<h3>Welcome to Stream Push</h3><br><br><Br>
+<br><br><br>
+<h3>Recommended Streams<h3>
 
- <div class="absolute"><h4>Recommended Streams</h4>
- <br>
+<div class=".embed-responsive">
 
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
-
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+	  <div id="twitch-embed"></div>   
+    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
     <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
         width: 400,
         height: 300,
-		autoplay: false,
-		layout: "video",
-        channel: "chepnko",
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+		autoplay: false,	
+        channel: "chepnko",       
         parent: ["embed.example.com", "othersite.example.com"]
       });
     </script>
- 
- 
-	</div>
+	
+</div>
+<div class=".embed-responsive">
+
+	&nbsp;
+	
+		  <div id="twitch-embed"></div>   
+    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 400,
+        height: 300,
+		autoplay: false,	
+        channel: "chepnko",       
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+	
+</div>
+<div class=".embed-responsive">
+	&nbsp;
+	
+		  <div id="twitch-embed"></div>   
+    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 400,
+        height: 300,
+		autoplay: false,	
+        channel: "chepnko",       
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
 </div>
 
-<h4>News and Updates</h4>
+	
+
+
+
 </main>
 
 <footer>
