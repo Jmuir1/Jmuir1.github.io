@@ -3,7 +3,7 @@
 
 #trapper { padding: 5px 5px; }
 
-.rightpadder { padding-right: 10px; }
+.rightpadder { padding-right: 100px; }
 
 body { background-color: #000000; }
 header{ background-color: #D5D5D5; 
@@ -12,7 +12,6 @@ header{ background-color: #D5D5D5;
 		
 		}
 
-h2 { background-color: #fafafa; }
 
 nav	{ position: fixed ;
 		background-color: #fafafa;
