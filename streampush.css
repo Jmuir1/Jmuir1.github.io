@@ -15,17 +15,12 @@ header{ background-color: #D5D5D5;
 
 nav	{ position: fixed ;
 		background-color: #fafafa;
-		background-image: url(sp.jpg);
+		background-image: url('images/sp.jpg');
 		background-repeat: no-repeat;
 		box-shadow: 2px 4px 4px black;
 		padding-left: 25px;
 		height: 100px;
-		width: 100%;
-		
-		
-		
-		
-		
+		width: 100%;	
 }
 
 
@@ -41,7 +36,7 @@ nav a { text-decoration: none;
 		
 }
 nav a:link { color: #000000; }
-nav a:visited { color: #EAEAEA; }
+nav a:visited { color: #000000; }
 nav a:hover { color: #869DC7; background-color: #EAEAEA; }
 
 
@@ -51,9 +46,7 @@ main { background-color: #fff;
 		color: #000000;
 		padding: 45px;		
 		
-		
-		
-		
+				
 }
 
 rightColumn { float: right;
