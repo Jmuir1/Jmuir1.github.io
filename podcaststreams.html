@@ -19,13 +19,6 @@ h3 { background-color: #D5D5D5;
 	width: 100% ;
 	box-shadow: 1px 2px 2px black;
  }
- 
-h5 { background-color: #D5D5D5;
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 600px;
-	box-shadow: 1px 2px 2px black;
- }
 
 #padder { padding-left 100px; }
 
@@ -47,54 +40,60 @@ h5 { background-color: #D5D5D5;
 			<li><a href="submit.html">SUBMIT</a></li>
 			<li style="float:right;"><img src="spbanner.jpg" alt="Stream Push Banner"></li>
 		</ul>
+		
 </nav>
 </div>
 </header>
 
+
+
+
+	
+
 <main>
+
 <br><br>
-<h2>Contact Us</h2>
+<h2>PODCAST STREAMS</h2>
+
 
 <br>
 <div id="padder">
+<small><i>Note: if the user is offline the stream will not load.</i></small>
+<h3>Watch Podcast Streams</h3>
+
 <center>
-<h3>How can we help?</h3>
 
-<br>
-<h5>
-Having a problem with the website or a suggestion?  We want to hear about it!
+<! -- Stream 1 --> 
 
-<br><br>
-<form action="mailto:Contactstreampush@gmail.com"
-method="POST"
-enctype="multipart/form-data"
-name="EmailForm">
-Name:<br>
-<input type="text" size="24" name="VisitorName"><br><br>
-Message:<br> <textarea name="VisitorComment" rows="4" cols="20" >
-</textarea><br>
-<input type="submit" value="Submit"> </form>
+	  <div id="twitch-embed"></div>   
+    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+       width: 425,
+        height: 550,
+		autoplay: false,	
+        channel: "watchvenn",       
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+	
+<! -- Stream 2 --> 
 
- 
+		  <div id="twitch-embed"></div>   
+    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 425,
+        height: 550,
+		autoplay: false,	
+        channel: "qanonanonymous",       
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+	
 
-<p>Drag the corner to expand the text box<p>
-</h5>
-<br>
-<hr>
-
-<h1> Frequently Asked Questions</h1>
-<h5>
-<p>Q: How fast will my content get added to the site after submitted<br>
-A: Typically we try to update within 24 hours<p>
-
-<p>Q: Whats the purpose of this website?<br>
-A: To generate new viewership for content creators<p>
-</h5>
-
-
-
-<br><br>
-	<h3 style="font-size:small">Protips: constructive feed back is the best feedback.</h3>
+	
+	<h3 style="font-size:small">Protips: Click on the stream or video to follow or subscribe the creator</h3>
 </center>
 
 
@@ -104,6 +103,7 @@ A: To generate new viewership for content creators<p>
 <footer>
 <a href="browse.html">HOME</a> &nbsp; <a href="browse.html">BROWSE</a> &nbsp; <a href="info.html">INFO</a>&nbsp; <a href="contact.html">CONTACT</a>&nbsp; <a href="submit.html">SUBMIT</a>
 <br>
+
 <a href=mailto:Contactstreampush@gmail.com">Email us: Contactstreampush@gmail.com</a>
 <br>
 &#169; StreamPush by JM
