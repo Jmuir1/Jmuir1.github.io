@@ -42,9 +42,12 @@ nav a:hover { color: #869DC7; background-color: #EAEAEA; }
 
 
 main { background-color: #fff;
+		background-image: url('images/controllerbg.jpg');
+		background-repeat: no-repeat;
 		margin-left: 160px
 		color: #000000;
-		padding: 45px;		
+		padding: 45px;	
+		
 		
 				
 }

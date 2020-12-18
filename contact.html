@@ -19,6 +19,13 @@ h3 { background-color: #D5D5D5;
 	width: 100% ;
 	box-shadow: 1px 2px 2px black;
  }
+ 
+h5 { background-color: #D5D5D5;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 600px;
+	box-shadow: 1px 2px 2px black;
+ }
 
 #padder { padding-left 100px; }
 
@@ -38,131 +45,50 @@ h3 { background-color: #D5D5D5;
 			<li><a href="info.html">INFO</a></li>
 			<li><a href="contact.html">CONTACT</a></li>
 			<li><a href="submit.html">SUBMIT</a></li>
+			<li style="float:right;"><img src="spbanner.jpg" alt="Stream Push Banner"></li>
 		</ul>
 </nav>
 </div>
 </header>
 
-
-
-
-	
-
 <main>
 <br><br>
 <h2>Contact Us</h2>
-
 
 <br>
 <div id="padder">
 <h3>How can we help?</h3>
 
 <center><br>
+<h5>
 Having a problem with the website or a suggestion?  We want to hear about it!
 
 <br><br>
+<form action="mailto:Contactstreampush@gmail.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+Name:<br>
+<input type="text" size="24" name="VisitorName"><br><br>
+Message:<br> <textarea name="VisitorComment" rows="4" cols="20" >
+</textarea><br>
+<input type="submit" value="Submit"> </form>
+
  
 
-
-
-<form method=”post” name=”contact_form” action=”contact-form-handler.php”>
-Your Name:<br> <input type=”text” name=”name”> 
-<br>Email Address:<br> <input type=”text” name=”email”>
-<br>Message:<br><textarea name=”message”></textarea>
-<br><input type="submit" value="Submit"> </form>  
-
-</form>
-
-
-
-
-<script language=”JavaScript”>
-
-var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”);
- frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”); 
-</script>
-
-
-
-
-<?php
-
-$errors = ”;
-
-$myemail = ‘contactstreampush@gmail.com’;//<—–Put Your email address here. if(empty($_POST[‘name’]) ||
-
-empty($_POST[’email’]) ||
-
-empty($_POST[‘message’]))
-
-{
-
-$errors .= “\n Error: all fields are required”;
-
-}
-
-$name = $_POST[‘name’];
-
-$email_address = $_POST[’email’];
-
-$message = $_POST[‘message’];
-
-if (!preg_match(
-
-“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
-
-{
-
-$errors .= “\n Error: Invalid email address”;
-
-}
-
-if( empty($errors))
-
-{
-
-$to = $myemail;
-
-$email_subject = “Contact form submission: $name”;
-
-$email_body = “You have received a new message. “.
-
-” Here are the details:\n Name: $name \n “.
-
-“Email: $email_address\n Message \n $message”;
-
-$headers = “From: $myemail\n”;
-
-$headers .= “Reply-To: $email_address”;
-
-mail($to,$email_subject,$email_body,$headers);
-
-//redirect to the ‘thank you’ page
-
-header(‘Location: contact.html’);
-
-}
-
-?>
-
-
-
-
-
-
-
 <p>Drag the corner to expand the text box<p>
+</h5>
 <br>
-
 <hr>
 
 <h1> Frequently Asked Questions</h1>
+<h5>
 <p>Q: How fast will my content get added to the site after submitted<br>
 A: Typically we try to update within 24 hours<p>
 
 <p>Q: Whats the purpose of this website?<br>
 A: To generate new viewership for content creators<p>
-
+</h5>
 
 
 
